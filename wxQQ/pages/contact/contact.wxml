@@ -1,0 +1,58 @@
+<!--logs.wxml-->
+<view class="container contact">
+  <!-- <block wx:for="{{logs}}" wx:for-item="log" wx:key="*this">
+    <text class="log-item"></text>
+  </block> -->
+  <view class="topBan">
+      <view class="Contactseach">
+         <input placeholder="搜索" />
+       </view> 
+       <view class="topbanNav">
+          <view class="newFriends item">
+              <image src="../../images/friend.png"></image>
+              <view><text>新朋友</text></view>
+          </view>
+           <view class="groupChat item">
+              <image src="../../images/chart.png"></image>
+              <view><text>群聊</text></view>             
+          </view>
+           <view class="PublicNum item">
+              <image src="../../images/public.png"></image>
+              <view class=""><text>公众号</text></view>              
+          </view>
+       </view>
+  </view>
+  <view class="list-treeBox">
+    <block wx:for="{{groupList}}" wx:for-item="item" wx:key="this">
+        <view class="list-item">
+         <view class="list-item-ban" bindtap="isShowList" data-ind="{{index}}">
+              <view class="list-item-group">
+                  <image class="{{item.trans}}" src="../../images/close.png"></image>
+                  <text>{{item.gName}}</text>
+              </view>
+              <view class="list-item-num">
+                  <text>{{item.gNum}}/{{item.gList.length}}</text>
+              </view>
+         </view>
+         <view class="list-item-isSee" hidden="{{item.flag?flase:true}}">  
+            <block wx:for="{{item.gList}}" wx:for-item="itemL" wx:key="*th">
+               <view class="list-item-isSee-list">
+                  <view class="list-item-userImg">
+                     <image src="{{itemL.userImg}}"></image>
+                  </view>
+                  <view class="list-item-userNameAndSay">
+                       <view class="list-item-userName">
+                         {{itemL.userName}}
+                       </view>
+                       <view class="list-item-userSay">
+                          {{itemL.userSay}}
+                       </view>
+                  </view>
+             </view>
+            </block>    
+         </view>
+     </view>
+     
+    </block>
+  </view>
+</view>

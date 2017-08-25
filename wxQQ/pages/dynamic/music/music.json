@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "QQ音乐",
+  "navigationBarBackgroundColor": "#12b7f4",
+  "navigationBarTextStyle": "white",
+  "backgroundColor": "#FFF",
+  "enablePullDownRefresh": false
+}

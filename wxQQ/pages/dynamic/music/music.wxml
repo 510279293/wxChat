@@ -1,0 +1,63 @@
+<!--pages/dynamic/music/music.wxml-->
+<view class="container">
+    <view class="tabBar">
+     <block wx:for="{{tabBar}}" wx:for-item="item">
+          <view class="tabItem {{item.hclass}}" bindtap="changeTab" data-ind="{{index}}">
+              {{item.name}}
+          </view>
+     </block>
+    </view>
+    <view class="meMusic">
+        <view class="memusicLogo">
+            <image src="{{userInfo.userInfoimg}}"></image>
+        </view>
+        <view class="memusicDetail">
+            <view class="memusicName">
+               {{userInfo.userInfoname}}
+            </view>
+            <view class="memusicRank">
+               好友排行
+            </view>
+        </view>
+        <view class="memusicSee">
+            <image src="../../../images/tip.png"></image>
+        </view>
+    </view>
+    <view class="musicBox">
+        <view class="boxBan">
+          <block wx:for="{{mtabNav}}" wx:for-item="item">
+               <view class="boxBanItem">
+                  <view class=""><image src="{{item.icon}}"></image></view>
+                  <view class="">{{item.tit}}</view>
+               </view>
+          </block>       
+        </view>
+        <view class="misicRandom">
+           <view class="play">
+               <image src="../../../images/start.png"></image>
+               <text>随机播放</text>
+           </view>
+           <view class="down">
+                <image src="../../../images/download.png"></image>
+                <text>下载到手机</text>
+           </view>
+        </view>
+        <view class="musicList-box">
+          <block wx:for="{{musicList}}" wx:for-item="item" data-ind="{{index}}">
+              <view class="musicList">
+                  <view class="music-item-logo">
+                      <image src="{{item.imgUrl}}"></image>
+                  </view>
+                  <view class="">
+                        <view class="music-name">
+                              {{item.name}}
+                        </view>
+                        <view class="music-author">
+                             {{item.author}}
+                        </view>
+                  </view>
+              </view>          
+          </block>
+        </view>
+    </view>
+</view>

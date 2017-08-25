@@ -1,0 +1,89 @@
+page{
+   background:#f8f9fa; 
+}
+.contact .topBan{
+  background:#fff; 
+}
+.contact .topBan .Contactseach{
+   text-align: center;
+   background: #fff;
+   box-sizing: border-box;
+   padding: 20rpx;
+}
+.contact .topBan .Contactseach input{
+    background: #f3f3f3;
+    font-size:30rpx;
+    border-radius: 12rpx;
+    padding:10rpx;
+}
+.contact .topBan .topbanNav{
+  display: flex;
+  padding-bottom: 16rpx;
+}
+ .contact .topBan .topbanNav .item{
+     width:33.33%;
+     text-align: center;
+     font-size: 24rpx;
+     font-weight: 600;
+ }
+ .contact .topBan .topbanNav .item image{
+    width:80rpx;
+    height:80rpx;
+ }
+.list-treeBox{
+   background: #fff;
+   margin-top:30rpx;
+}
+.list-treeBox .list-item{
+   box-sizing: border-box;
+   padding: 30rpx;
+   border-bottom: 1rpx solid #e5e5e5;
+}
+.list-treeBox .list-item .list-item-ban{
+     display: flex;
+     justify-content: space-between;
+     font-size:30rpx;
+}
+.list-treeBox .list-item .list-item-ban .list-item-group image{
+     width:30rpx;
+     height:30rpx;
+}
+.list-treeBox .list-item .list-item-ban .list-item-group .trans{
+    transform: rotateZ(90deg);
+}
+.list-treeBox .list-item .list-item-isSee{
+   /* display: none; */
+}
+.list-treeBox .list-item .list-item-isSee .list-item-isSee-list{
+  display: flex;
+  align-items: center;
+  border-top: 1rpx solid #e5e5e5;
+  padding:20rpx;
+  padding-bottom:0rpx;
+  width:100%;
+}
+.list-treeBox .list-item .list-item-isSee .list-item-isSee-list:nth-of-type(1){
+  border:none;
+}
+.list-treeBox  .list-item-userImg image{
+  width:86rpx;
+  height:86rpx;
+  border-radius: 50%;
+  margin-right:20rpx;
+}
+.list-treeBox  .list-item-userNameAndSay{
+   font-size:30rpx;
+   width:84%;
+}
+.list-treeBox  .list-item-userNameAndSay .list-item-userName{
+  font-weight: 600;
+}
+.list-treeBox  .list-item-userNameAndSay .list-item-userSay{
+  color:#9b9db1;
+  margin-top:3rpx;
+  width:100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+

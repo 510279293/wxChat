@@ -1,0 +1,128 @@
+/* pages/dynamic/music/music.wxss */
+page{
+  background: #f8f9fa;
+}
+.tabBar{
+  display: flex;
+  background: #fff;
+  justify-content: center;
+  border-bottom: 1rpx solid #e5e5e5;
+  color:#787878;
+}
+.tabBar .tabItem{
+  width:33.3333%;
+  text-align: center; 
+  font-size:40rpx;
+  padding:20rpx 0rpx;
+  border-bottom: 6rpx solid #fff;
+}
+.tabBar .on{
+  border-bottom:4rpx solid #3eb94e;
+  color:#3eb94e;
+}
+.meMusic{
+   display: flex;
+   box-sizing: border-box;
+   padding:20rpx;
+   align-items: center;
+   background:#fff;
+}
+.meMusic .memusicLogo{
+   display: flex;
+   align-items: center;
+}
+.meMusic .memusicLogo image{
+   width:86rpx;
+   height:86rpx;
+   margin-right:20rpx;
+   border-radius: 50%;
+}
+musicDetail .memusicName{
+   font-size:24rpx;
+   font-weight: 800;   
+}
+.memusicRank{
+   color:#999;
+   font-size:24rpx;
+}
+.memusicSee{
+  display: flex;
+  align-items: center;
+}
+.memusicSee image{
+   width:66rpx;
+   height:66rpx;
+}
+
+.musicBox{
+
+}
+.memusicSee image{
+   width:66rpx;
+   height:66rpx;
+}
+.musicBox .boxBan{
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  margin-top:30rpx;
+  padding:20rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+.boxBanItem{
+  width:33.33333%;
+  text-align: center;
+  font-size:24rpx;
+  font-weight: 600;
+}
+.boxBanItem image{
+  width:76rpx;
+  height:76rpx;
+}
+.misicRandom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size:30rpx;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+.play,.down{
+  display: flex;
+  align-items: center;
+}
+.misicRandom image{
+  width:56rpx;
+  height:56rpx;
+  margin-right: 20rpx;
+}
+
+.musicList{
+  display: flex;
+  align-items: center; 
+  background: #fff;
+  font-size:30rpx;
+  padding:20rpx 30rpx;
+  border-top:1rpx solid #e5e5e5;
+}
+.musicList:nth-child(1){
+  border:none;
+}
+.musicList image{
+  width:76rpx;
+  height:76rpx;
+  margin-right:10rpx;
+}
+.musicList .music-name{
+  font-weight: 600;
+  width:100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.musicList .music-author{
+  color:#9b9db1;
+  margin-top:6rpx;
+}

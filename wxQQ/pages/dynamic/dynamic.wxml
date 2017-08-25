@@ -1,0 +1,41 @@
+<!--logs.wxml-->
+<view class="container contact">
+  <!-- <block wx:for="{{logs}}" wx:for-item="log" wx:key="*this">
+    <text class="log-item"></text>
+  </block> -->
+  <view class="topBan">
+      <view class="Contactseach">
+         <input placeholder="搜索" />
+       </view> 
+       <view class="topbanNav">
+          <view class="newFriends item">
+              <image src="../../images/zone.png"></image>
+              <view><text>好友动态</text></view>
+          </view>
+           <view class="groupChat item">
+              <image src="../../images/vicinity.png"></image>
+              <view><text>附近</text></view>             
+          </view>
+           <view class="PublicNum item">
+              <image src="../../images/tribe.png"></image>
+              <view class=""><text>兴趣部落</text></view>              
+          </view>
+       </view>
+  </view>
+  <view class="list-treeBox">
+    <block wx:for="{{groupList}}" wx:for-item="item" wx:key="this">
+        <view class="list-item">
+         <view class="list-item-ban" bindtap="toSonPage" data-ind="{{index}}">
+              <view class="list-item-group">
+                  <image class="{{item.trans}}" src="{{item.icon}}"></image>
+                  <text>{{item.groupName}}</text>
+              </view>
+              <view class="list-item-num">
+                  <image src="{{item.rightImage}}"></image>
+              </view>
+         </view>
+     </view>
+     
+    </block>
+  </view>
+</view>

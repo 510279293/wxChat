@@ -1,0 +1,86 @@
+page{
+  background: #f3f3f3;
+}
+.contact{
+   background:#f8f9fa; 
+}
+.contact .topBan{
+  background:#fff; 
+}
+.contact .topBan .Contactseach{
+   text-align: center;
+   background: #fff;
+   box-sizing: border-box;
+   padding: 20rpx;
+}
+.contact .topBan .Contactseach input{
+    background: #f3f3f3;
+    font-size:30rpx;
+    border-radius: 12rpx;
+    padding:10rpx;
+}
+.contact .topBan .topbanNav{
+  display: flex;
+  padding-bottom: 16rpx;
+}
+ .contact .topBan .topbanNav .item{
+     width:33.33%;
+     text-align: center;
+     font-size: 30rpx;
+     font-weight: 600;
+ }
+ .contact .topBan .topbanNav .item image{
+    width:80rpx;
+    height:80rpx;
+ }
+.list-treeBox{
+   margin-top:20rpx;
+}
+.list-treeBox .list-item{
+   background: #fff;
+   box-sizing: border-box;
+   padding: 20rpx 20rpx;
+   border-bottom: 1rpx solid #e5e5e5;
+}
+.list-treeBox .list-item:nth-of-type(5){
+  margin-top:30rpx;
+}
+.list-treeBox .list-item .list-item-ban{
+     display: flex;
+     justify-content: space-between;
+     font-size:30rpx;
+     align-items: center;
+}
+.list-treeBox .list-item .list-item-ban .list-item-group{
+  display: flex;
+  align-items: center;
+}
+.list-treeBox .list-item .list-item-ban .list-item-num image{
+   width:60rpx;
+   height:60rpx;
+}
+.list-treeBox .list-item .list-item-ban .list-item-group image{
+     width:60rpx;
+     height:60rpx;
+     margin-right: 20rpx;
+}
+
+.list-treeBox  .list-item-userImg image{
+  width:56rpx;
+  height:56rpx;
+  border-radius: 50%;
+  margin-right:10rpx;
+}
+.list-treeBox  .list-item-userNameAndSay{
+   font-size:24rpx;
+}
+ .list-treeBox  .list-item-userNameAndSay{
+   font-size:24rpx;
+}
+.list-treeBox  .list-item-userNameAndSay .list-item-userName{
+  font-weight: 600;
+}
+.list-treeBox  .list-item-userNameAndSay .list-item-userSay{
+  color:#9b9db1;
+}
+

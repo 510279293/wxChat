@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="container">
+   <view class="QQseach">
+         <input placeholder="搜索" />
+   </view> 
+   <block wx:for="{{talkList}}" wx:for-item="item" wx:key="*this">
+        <view class="chatListItem">
+          <view class="ItemL">
+              <view class="ItemLogo">
+                <image src="{{item.userImg}}"></image>
+              </view>
+              <view class="ItemBox">
+                <view class="ItemName">
+                    {{item.userName}}
+                </view>
+                <view class="ItemSay">
+                    {{item.userSay}}
+                </view>
+              </view>
+          </view>
+            <view class="ItemTimeAndNum">
+                <view class="ItemTime">
+                  {{item.userTime}}
+                </view>
+                <view class="ItemNum">
+                  {{item.mesNum}}
+                </view>
+            </view>
+      </view>
+   </block>
+</view>
